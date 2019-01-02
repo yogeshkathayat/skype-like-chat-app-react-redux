@@ -1,4 +1,5 @@
-import {  } from "../static-data";
-export default (state ={}, action)=> {
-  return state;
+import { } from "../static-data";
+
+export default (state = null, action) => {
+    return state;
 }

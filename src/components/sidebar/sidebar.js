@@ -4,7 +4,9 @@ import "./sidebar.css";
 
 const Sidebar = ({ contacts }) => {
   return <aside className="Sidebar"><p>Contacts</p>
-     {contacts.map(contact => <User user={contact} key={contact.user_id} />)}</aside>;
+     {contacts.map(contact => <User user={contact} key={contact.user_id}/>)}</aside>;
 };
+
+
 
 export default Sidebar;
