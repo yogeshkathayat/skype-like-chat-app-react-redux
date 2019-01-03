@@ -3,6 +3,7 @@ import store from "../../store";
 import Header from "./header";
 import Chat from "./chat";
 import _ from "lodash";
+import "./chat.css"
 
 const ChatWindow = ({ activeUserId }) => {
     const state = store.getState();
@@ -10,7 +11,7 @@ const ChatWindow = ({ activeUserId }) => {
     const messages=state.messages[activeUserId];
     console.log(messages,"messages")
     return (
-        <div>
+        <div className="ChatWindow">
         <Header user={activeUser} />
         <Chat messages={_.values(messages)} />
         </div>
